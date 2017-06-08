@@ -65,14 +65,14 @@ N.B. Il numero di righe (nell'esempio 4000) deve essere multiplo del numero di p
 I test sono stati eseguiti su una m4.xlarge con 4 core.
 Di seguito sono riportati i grafici rispettivamente di Strong Scaling e Weak Scaling.
 
-![strong](/data/Strong.jpg)
+![strong](data/Strong.jpg)
 
 Nel test di Strong Scaling la taglia N di input è pari a 10920 e rimane costante durante tutto il test (matrice di dimensione 10920x10920).
 Come si evince dal grafico l'esecuzione sequenziale prende tempo di circa 3,33 min, incrementando il numero di processi e di conseguenza il numero di instanze in relazione ai core il tempo diminuisce notevolmente.
 
 I 19 test efettuati sono stati eseguiti utilizzando però solo un numero di processi multiplo della taglia in input.
 
-![weak](/data/Weak.jpg)
+![weak](data/Weak.jpg)
 
 Nel test di Weak Scaling la taglia N di input iniziale è 330.
 In questo test la taglia varia in relazione al numero di processi mediante la seguente relazione :
